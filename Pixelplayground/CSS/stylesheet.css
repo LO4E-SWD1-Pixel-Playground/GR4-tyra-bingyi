@@ -2,7 +2,8 @@
 #88A0A4 for header/footer and banners (see in visual design)
 #FFFFFF for link/nav/text on darker backgrounds
 #A5BCC0 for boxes/buttons
-#D0E0E3 for background colour*/
+#D0E0E3 for background colour
+#000000 for text*/
 
 
 /* GENERAL BACKGROUND COLOURS! */
@@ -22,3 +23,13 @@ footer{
 }
 
 /* HEADER */
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+nav > a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
