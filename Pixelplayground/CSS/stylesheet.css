@@ -1,5 +1,10 @@
-/* colours we are using are : 
+/* colours we are using : 
 #88A0A4 for header/footer and banners (see in visual design)
 #FFFFFF for link/nav/text on darker backgrounds
 #A5BCC0 for boxes/buttons
 #D0E0E3 for background colour*/
+
+
+body{
+    background-color: #D0E0E3;
+}
