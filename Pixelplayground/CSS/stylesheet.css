@@ -4,6 +4,8 @@
 #A5BCC0 for boxes/buttons
 #D0E0E3 for background colour*/
 
+
+/* GENERAL BACKGROUND COLOURS! */
 main{
     background-color: #D0E0E3;
     height: 80vh;
@@ -18,3 +20,5 @@ footer{
     background-color: #88A0A4;
     height: 10vh;
 }
+
+/* HEADER */
