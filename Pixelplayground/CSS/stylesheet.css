@@ -54,14 +54,10 @@ a:hover{
 /* MAIN */
 #box1{
     background-color: #88A0A4;
-    border: 2px solid #FFFFFF;
-    width: 280px;
+    border: 4px solid #FFFFFF;
+    width: 300px;
     height: 400px;
     margin: 15px;
-}
-
-#box2{
-    
 }
 
 .letter{
