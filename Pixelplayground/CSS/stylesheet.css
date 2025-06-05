@@ -32,13 +32,12 @@ footer{
 nav{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    gap: 10px;
 }
 
 nav > a {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 22px;
-    font-family: "Pixelify Sans", sans-serif;
 }
 
