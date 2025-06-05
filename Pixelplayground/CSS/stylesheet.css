@@ -28,7 +28,6 @@ footer{
     height: 10vh;
 }
 
-/* HEADER */
 nav{
     display: flex;
     flex-direction: row;
@@ -39,5 +38,26 @@ nav > a {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 22px;
+    margin: 20px;
+    margin-left: 130px;
 }
 
+a:hover{
+    text-decoration: underline;
+    text-decoration-color: #D0E0E3;
+}
+
+.logo{
+    margin-top: -80px;
+}
+/* MAIN */
+
+
+
+/* FOOTER */
+.social{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    margin-right: 20px;
+}
