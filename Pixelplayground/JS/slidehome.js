@@ -1,20 +1,20 @@
-let slideIndex = 0;
+let slides = document.querySelectorAll('.slide');
 
-    function showSlides() {
-    let slides = document.getElementsByClassId("slide");
+let lastSlide = 1;
 
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+
+function slideshow() {
+    lastSlide = slideNum;
+    if (slideNum < slides.length -1 ) {
+        slideNum ++;
+    } else {
+        slideNum = 0;
     }
 
-    slideIndex++;
-    if (slideIndex > slides.length) {
-        slideIndex = 1;
-    }
+    slides[lastSlide].style.display = "none";
+    slide.innerHTML =`${slideNum + 1} / ${slides.length}`;
+}
 
-     slides[slideIndex - 1].style.display = "block";
-
-    setTimeout(showSlides, 3000);
-    }
-        
-    showSlides();
+slides[lastSlide].style.display = "none";
+let timer = 3000;
+let slideInter = setInterval(slideshow, timer);
