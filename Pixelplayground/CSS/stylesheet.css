@@ -88,6 +88,12 @@ a:hover{
 
 .boxes2{
     display: flex;
+    justify-content: space-evenly;
+}
+
+.boxes3{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 h1{
