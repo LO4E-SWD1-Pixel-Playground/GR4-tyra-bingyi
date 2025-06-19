@@ -1,20 +1,14 @@
-let slides = document.querySelectorAll('.slide');
+const slides = document.querySelectorAll(".slide");
 
-let lastSlide = 1;
+let currentSlide = 0;
 
-
-function slideshow() {
-    lastSlide = slideNum;
-    if (slideNum < slides.length -1 ) {
-        slideNum ++;
-    } else {
-        slideNum = 0;
+    function showNextSlide() {
+        slides[currentSlide].style.display = "none";
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].style.display = "block";
     }
 
-    slides[lastSlide].style.display = "none";
-    slide.innerHTML =`${slideNum + 1} / ${slides.length}`;
-}
+    slides.forEach(slide => slide.style.display = "none");
+    slides[0].style.display = "block";
 
-slides[lastSlide].style.display = "none";
-let timer = 3000;
-let slideInter = setInterval(slideshow, timer);
+    setInterval(showNextSlide, 3000);

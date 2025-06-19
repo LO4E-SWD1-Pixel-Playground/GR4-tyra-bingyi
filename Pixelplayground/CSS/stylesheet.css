@@ -54,12 +54,17 @@ a:hover{
     margin-top: -80px;
 }
 
+.dark-mode {
+  color: white;
+}
+
 /* MAIN */
 /* HOMEPAGE */
 
 .slide{
     height: 400px;
     margin: 15px;
+    display: none;
 }
 
 .letter{
@@ -118,7 +123,7 @@ p{
     border: 3px solid #FFFFFF;
     width: 120px;
     height: 35px;
-    margin: 10px;
+    margin: 40px;
     margin-left: 550px;
 }
 
@@ -147,6 +152,7 @@ input{
     height: 25px;
     border-radius: 5px;
     border-color: #88A0A4;
+    font-size: 18px;
 }
 
 .submit{
@@ -155,7 +161,20 @@ input{
 }
 
 .extratext{
+    margin-left: 80vh;
+    margin-top: -64vh;
+}
 
+#registerenbtn{
+    font-size: 20px;
+    color: #FFFFFF;
+    height: 15px;
+    text-decoration: none;
+}
+
+#registerenbtn:hover{
+    color: black;
+    text-decoration: underline;
 }
 
 /* FOOTER */
