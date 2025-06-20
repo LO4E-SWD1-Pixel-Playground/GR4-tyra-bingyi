@@ -52,6 +52,23 @@
                 </section>
                 </article>
 
+                <?php
+
+        include require "dbconnect.php";
+
+        try{
+            $uname = $_POST ['username'];
+            $pass = $_POST ['password'];
+            $sql = "SELECT * FROM gebruikers WHERE username = '$uname' AND password = '$pass'";
+            $result = $conn->query($sql);
+
+            if($result->num_rows ==1){
+                echo "Login gegevens juist";
+            }else{
+                echo"Login gegevens niet juist";
+            }
+        }
+
                 <div class="extratext">
                     <p>Heb je al een account? <br>
                         Klik hieronder om in te loggen!</p> <br>

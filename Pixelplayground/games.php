@@ -11,7 +11,7 @@
 
     <title>Games</title>
     <link rel="stylesheet" href="CSS/stylesheet.css">
-    <script href="JS/darklight.js" defer></script>
+    <script src="JS/darklight.js" defer></script>
 </head>
 
 <body>

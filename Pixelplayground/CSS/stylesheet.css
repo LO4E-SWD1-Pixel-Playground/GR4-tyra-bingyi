@@ -3,7 +3,9 @@
 #FFFFFF for link/nav/text on darker backgrounds
 #A5BCC0 for boxes/buttons
 #D0E0E3 for background colour
-#000000 for text*/
+#000000 for text
+#546c6f for dark mode*/
+
 
 * {
     margin: 0;
@@ -66,10 +68,10 @@ a:hover{
         background-color: #A5BCC0;
     }
     header{
-        background-color: #D0E0E3;
+        background-color: #546c6f;
     }
     footer{
-        background-color: #D0E0E3;
+        background-color: #546c6f;
     }
     a{
         color: black;

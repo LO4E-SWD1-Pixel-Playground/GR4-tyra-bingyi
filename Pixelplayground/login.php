@@ -50,6 +50,37 @@
                 </section>
                 </article>
 
+                <?php
+        if (isset($_POST['submit'])) {  
+            if (
+                !empty($_POST['gebruikersnaam']) &&
+                !empty($_POST['wachtwoord']) &&
+            ) {
+
+                $conn = new mysqli("localhost", "game");
+ 
+                if ($conn->connect_error) {
+                    die("Verbinding mislukt: " . $conn->connect_error);
+                }
+ 
+                $naam = $_POST['gebruikersnaam'];
+                $datum = $_POST['wachtwoord'];
+ 
+                $sql = "INSERT INTO Player   (id, naam, wachtwoord) VALUES (NULL, '$naam', '$wachtwoord')";
+ 
+                if ($conn->query($sql) === TRUE) {
+                    echo "Gebruiker toegevoegd.";
+                } else {
+                    echo "Fout bij toevoegen: " . $conn->error;
+            }
+ 
+            $conn->close();
+        } else {
+            echo "Vul alle velden in.";
+        }
+            }
+        ?>
+
                 <div class="extratext">
                     <p>Heb je nog geen account? <br>
                     Geen probleem, maak er een aan! <br>
