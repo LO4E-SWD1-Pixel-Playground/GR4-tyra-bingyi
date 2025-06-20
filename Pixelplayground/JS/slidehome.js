@@ -11,4 +11,4 @@ let currentSlide = 0;
     slides.forEach(slide => slide.style.display = "none");
     slides[0].style.display = "block";
 
-    setInterval(showNextSlide, 3000);
+    setInterval(showNextSlide, 2000);
