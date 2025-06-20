@@ -33,7 +33,7 @@
                         <input type="text" required="" name="gebruikersnaam"><br><br>
                         Wachtwoord:<br>
                         <input type="text" id="nameinput" required="" name="wachtwoord"><br><br>
-                        <input class="submit" type="submit" name="submit" value="Log in!">
+                        <a href="games.php"><input class="submit" type="submit" name="submit" value="Log in!"></a>
                     </form>
                     <br>
                 </div>

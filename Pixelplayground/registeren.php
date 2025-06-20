@@ -34,7 +34,7 @@
                             <input type="text" required="" name="wachtwoord"><br><br>
                             Herhaal Wachtwoord:<br>
                             <input type="text" required="" name="Herhaal wachtwoord"><br><br>
-                            <input class="submit" type="submit" name="submit" value="Registeer!">
+                            <a href="games.php"><input class="submit" type="submit" name="submit" value="Registeer!"></a>
                         </form>
                         <br>
                     </div>
