@@ -11,6 +11,7 @@
 
     <title>Games</title>
     <link rel="stylesheet" href="CSS/stylesheet.css">
+    <script href="JS/localstorage.js" defer></script>
 </head>
 
 <body>
@@ -27,14 +28,14 @@
                     <div class="letter">
                         <h1>Registeren</h1>
                         <br><br>
-                        <form method="post" id="form">
+                        <form method="post" id="form" onsubmit="handleSubmit(event)">
                             Gebruikersnaam:<br>
                             <input type="text" required="" name="gebruikersnaam"><br><br>
                             Wachtwoord:<br>
                             <input type="text" required="" name="wachtwoord"><br><br>
                             Herhaal Wachtwoord:<br>
                             <input type="text" required="" name="Herhaal wachtwoord"><br><br>
-                            <a href="games.php"><input class="submit" type="submit" name="submit" value="Registeer!"></a>
+                            <input class="submit" type="submit" name="submit" value="Registeer!">
                         </form>
                         <br>
                     </div>

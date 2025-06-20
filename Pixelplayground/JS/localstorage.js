@@ -17,3 +17,8 @@ const storedPassword = localStorage.getItem('wachtwoord');
     localStorage.setItem('gebruikersnaam', username);
     localStorage.setItem('wachtwoord', password);
 });
+
+function handleSubmit(event) {
+    event.preventDefault();
+    window.location.href = "games.php"
+};
