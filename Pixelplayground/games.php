@@ -30,7 +30,7 @@
             <article class="boxes2">
                 
                 <section id="box3">
-                    <a href="tictactoe.html"><img id="box3" src="IMG/tictactoe.png"></a>
+                    <a href="tictactoe.php"><img id="box3" src="IMG/tictactoe.png"></a>
                 </section>
 
                 <section id="box3">
