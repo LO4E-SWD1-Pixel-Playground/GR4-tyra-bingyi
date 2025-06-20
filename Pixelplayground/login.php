@@ -28,7 +28,7 @@
                 <div class="letter">
                     <h1>Log in</h1>
                     <br><br>
-                    <form method="post" id="form" onsubmit="handleSubmit(event)">
+                    <form method="post" id="form">
                         Gebruikersnaam:<br>
                         <input type="text" required="" name="gebruikersnaam"><br><br>
                         Wachtwoord:<br>
