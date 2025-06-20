@@ -11,6 +11,7 @@
 
     <title>Games</title>
     <link rel="stylesheet" href="CSS/stylesheet.css">
+    <script href="JS/localstorage.js" defer></script>
 </head>
 
 <body>
@@ -19,25 +20,42 @@
         <?php include "PHP/header.php"?>
     </header>
     
-        <main>
-            <br><br>
-                <article class="boxes">
+    <main>
+        <br><br>
+            <article class="boxes">
+                <br><br>
+            <section id="box1">
+                <div class="letter">
+                    <h1>Log in</h1>
                     <br><br>
-                <section id="box1">
-                    <div class="letter">
-                        <h1>Log in</h1>
-                        <br><br>
-                        <form method="post" id="form">
-                            Gebruikersnaam:<br>
-                            <input type="text" required="" name="gebruikersnaam"><br><br>
-                            Wachtwoord:<br>
-                            <input type="text" id="nameinput" required="" name="wachtwoord"><br><br>
-                            <input class="submit" type="submit" name="submit" value="Log in!">
-                        </form>
-                        <br>
-                    </div>
-                </section>
-                </article>
+                    <form method="post" id="form">
+                        Gebruikersnaam:<br>
+                        <input type="text" required="" name="gebruikersnaam"><br><br>
+                        Wachtwoord:<br>
+                        <input type="text" id="nameinput" required="" name="wachtwoord"><br><br>
+                        <input class="submit" type="submit" name="submit" value="Log in!">
+                    </form>
+                    <br>
+                </div>
+            </section>
+            </article>
+
+            <?php
+
+    require "dbconnect.php";
+
+try{
+    $uname = $_POST ['username'];
+    $pass = $_POST ['password'];
+    $sql = "SELECT * FROM gebruikers WHERE username = '$uname' AND password = '$pass'";
+    $result = $conn->query($sql);
+
+    if($result->num_rows ==1){
+        echo "Login gegevens juist";
+    }else{
+        echo"Login gegevens niet juist";
+    }
+}
 
                 <div class="extratext">
                     <p>Heb je nog geen account? <br>

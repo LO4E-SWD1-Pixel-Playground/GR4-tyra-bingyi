@@ -1,11 +1,12 @@
 <?php
+$host = "localhost";
+$user = "root";
+$pass = "";
+$dbname = "gamesite";
 
-    if($result->num_rows == 1){
-        session_start();
-        $_SESSION['username'] = $uname;
-        $_SESSION['loggedIn'] = true;
-        header("Location: ingelogd.php");
-    }else{
-        echo "Login gegevens niet juist";
-    }
-    ?>
+$conn = new mysqli($host, $user, $pass, $dbname);
+
+if ($conn->connect_error) {
+    die("Verbinding mislukt: " . $conn->connect_error);
+}
+?>
