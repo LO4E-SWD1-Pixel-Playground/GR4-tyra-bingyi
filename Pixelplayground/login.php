@@ -55,15 +55,15 @@ try{
     }else{
         echo"Login gegevens niet juist";
     }
-}
+} ?>
 
-                <div class="extratext">
-                    <p>Heb je nog geen account? <br>
-                    Geen probleem, maak er een aan! <br>
-                    Klik hieronder om je te registreren.</p><br>
-                    <a href="registeren.php" id="registerenbtn">Registeer!</a>
-                </div>
-        </main>
+        <div class="extratext">
+            <p>Heb je nog geen account? <br>
+            Geen probleem, maak er een aan! <br>
+            Klik hieronder om je te registreren.</p><br>
+            <a href="registeren.php" id="registerenbtn">Registeer!</a>
+        </div>
+    </main>
 
     <footer>
         <?php include "PHP/footer.php"?>
