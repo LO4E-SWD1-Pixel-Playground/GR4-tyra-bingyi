@@ -43,7 +43,7 @@
                     <p>Heb je nog geen account? <br>
                     Geen probleem, maak er een aan! <br>
                     Klik hieronder om je te registreren.</p><br>
-                    <a href="registeren.html" id="registerenbtn">Registeer!</a>
+                    <a href="registeren.php" id="registerenbtn">Registeer!</a>
                 </div>
         </main>
 

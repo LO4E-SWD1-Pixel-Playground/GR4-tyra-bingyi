@@ -44,7 +44,7 @@
                 <div class="extratext">
                     <p>Heb je al een account? <br>
                         Klik hieronder om in te loggen!</p> <br>
-                    <a href="login.html" id="registerenbtn">Log in!</a>
+                    <a href="login.php" id="registerenbtn">Log in!</a>
                 </div>
         </main>
 
