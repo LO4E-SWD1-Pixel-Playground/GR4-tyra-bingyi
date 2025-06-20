@@ -1,8 +1,8 @@
 <header>
 
         <nav>
-            <a href="index.html">Home </a>
-            <a href="games.html">Games</a>
+            <a href="index.php">Home </a>
+            <a href="games.php">Games</a>
             <a href="#">Profile </a>
             <a href="#">Highscore </a>
         </nav>

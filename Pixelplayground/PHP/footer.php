@@ -6,8 +6,8 @@
         </section>
 
         <nav id="footernav">
-            <a href="login.html">Log in</a>
-            <a href="registeren.html">Registeren</a>
+            <a href="login.php">Log in</a>
+            <a href="registeren.php">Registeren</a>
         </nav>
         
     </footer>

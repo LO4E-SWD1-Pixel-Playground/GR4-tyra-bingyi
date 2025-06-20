@@ -54,7 +54,7 @@
 
                 <?php
 
-        include require "dbconnect.php";
+        require "dbconnect.php"
 
         try{
             $uname = $_POST ['username'];
