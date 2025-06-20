@@ -16,18 +16,7 @@
 <body>
 
     <header>
-
-        <nav>
-            <a href="index.html">Home </a>
-            <a href="games.html">Games</a>
-            <a href="#">Profile </a>
-            <a href="#">Highscore </a>
-        </nav>
-
-            <article class="logo">
-             <a href="index.html"><img src="IMG/logo.png" height="90px" width="120px"></a>
-        </article>
-
+        <?php include "PHP/header.php"?>
     </header>
     
         <main>
@@ -52,23 +41,6 @@
                 </section>
                 </article>
 
-                <?php
-
-        require "dbconnect.php"
-
-        try{
-            $uname = $_POST ['username'];
-            $pass = $_POST ['password'];
-            $sql = "SELECT * FROM gebruikers WHERE username = '$uname' AND password = '$pass'";
-            $result = $conn->query($sql);
-
-            if($result->num_rows ==1){
-                echo "Login gegevens juist";
-            }else{
-                echo"Login gegevens niet juist";
-            }
-        }
-
                 <div class="extratext">
                     <p>Heb je al een account? <br>
                         Klik hieronder om in te loggen!</p> <br>
@@ -77,16 +49,7 @@
         </main>
 
     <footer>
-        <section class="social">
-            <a href="#"><img src="IMG/pixel_discord (white).png" alt="discord logo" height="65" width="65"></a>
-            <a href="#"><img src="IMG/pixel_facebook-round (white).png" alt="facebook logo" height="61" width="61"></a>
-            <a href="#"><img src="IMG/pixel_github (white).png" alt="github logo" height="60" width="60"></a>
-        </section>
-        
-        <nav id="footernav">
-            <a href="login.html">Log in</a>
-            <a href="registeren.html">Registeren</a>
-        </nav>
+        <?php include "PHP/footer.php"?>
     </footer>
 
 </body>
