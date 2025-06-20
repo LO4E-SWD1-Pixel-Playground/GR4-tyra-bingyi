@@ -56,6 +56,36 @@ a:hover{
 
 .dark-mode {
   color: white;
+    #box1{
+        background-color: #88A0A4;
+    }
+    #box2{
+        background-color: #88A0A4;
+    }
+    main{
+        background-color: #A5BCC0;
+    }
+    header{
+        background-color: #D0E0E3;
+    }
+    footer{
+        background-color: #D0E0E3;
+    }
+    a{
+        color: black;
+    }
+}
+
+#buttondark{
+    margin-left: 30px;
+    height: 40px;
+    width: 100px;
+    background-color: #FFFFFF;
+    color: #88A0A4;
+    border-radius: 2px;
+    border-color: black;
+    border: #88A0A4;
+    cursor: pointer;
 }
 
 /* MAIN */
@@ -205,14 +235,15 @@ input{
 
 #mini-box2{
     background-color: #A5BCC0;
-    border: 3px solid #FFFFFF;
+    border: 3px solid;
+    border-color: #FFFFFF;
     width: 180px;
     height: 35px;
     margin: 40px;
     margin-left: 550px;
 }
 
-#restartBtn{
+#restartbtn{
     height: 50px;
     width: 100px;
     margin: auto;
