@@ -17,12 +17,16 @@ let running = false;
 
 initializeGame();
 
-function initializeGame(){
-    cells.forEach(cell => cell.addEventListener("click", cellClicked));
+function initializeGame() {
+    cells.forEach(cell => cell.addEventListener("click", (event) => {
+    cellClicked(event);
+    }));
+    
     restartbtn.addEventListener("click", restartGame);
     statusUpdate.textContent = `${currentPlayer}'s turn`;
     running = true;
 }
+
 function cellClicked(){
     const cellIndex = this.getAttribute("cellIndex");
 
@@ -77,4 +81,8 @@ function restartGame(){
     statusUpdate.textContent = `${currentPlayer}'s turn`;
     cells.forEach(cell => cell.textContent = "");
     running = true;
+}
+
+function restartButton() {
+  confirm("Restart?");
 }

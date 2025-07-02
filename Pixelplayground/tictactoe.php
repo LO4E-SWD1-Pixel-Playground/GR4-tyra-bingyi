@@ -37,7 +37,7 @@
             <div cellIndex="8" class="cell"></div>
         </div>
         <h2 id="statusUpdate"></h2>
-        <button id="restartbtn">Opnieuw</button>
+        <button onclick="restartButton()" id="restartbtn">Opnieuw</button>
     </div>
     <script src="JS/tictactoe.js"></script>
 </main>
