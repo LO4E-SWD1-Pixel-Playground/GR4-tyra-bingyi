@@ -1,6 +1,6 @@
 <?php
     try {
-        $conn = new mysqli('localhost', 'root', 'root', 'phples');
+        $conn = new mysqli('');
     } catch (Exception $e) {
         echo $e->getMessage();
     }
