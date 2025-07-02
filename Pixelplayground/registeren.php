@@ -42,6 +42,46 @@
                 </section>
                 </article>
 
+        <?php
+            require_once 'database.php';
+
+    if (isset($_POST['submit'])) {
+        if (!empty($_POST['name']) && !empty($_POST['wachtwoord'])) {
+            $name = htmlspecialchars($_POST['name']);
+        
+        $slq = "SELECT * FROM gebruikers WHERE gebruikersnaam = '$name'";
+        $result = $conn->query($slq);
+        if ($result->num_rows > 0) {
+            echo "Gebruiker bestaat all, gebruik iets anders.";
+            exit;
+        }
+        
+        $wachtwoord = $_POST['wachtwoord'];
+        $hashedPassword = password_hash($wachtwoord, PASSWORD_DEFAULT);
+
+        try {
+            $sql = "INSERT INTO gebruikers (gebruikersnaam, wachtwoord) VALUES ('$name', '$hashedPassword
+            ')";
+            $result = $conn->query($sql);
+            if($result === TRUE) {
+                echo "New record created successfully";
+
+            } else {
+                echo "Error: " . $sql . "<br>" . $conn->error;
+            }
+           
+        } catch (Exception $e) {
+            echo $e->getMessage();
+        }
+    } else {
+        echo "Please fill in all fields.";
+    }
+
+    $conn->close();
+    
+}
+?>
+
                 <div class="extratext">
                     <p>Heb je al een account? <br>
                         Klik hieronder om in te loggen!</p> <br>

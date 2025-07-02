@@ -40,6 +40,51 @@
             </section>
             </article>
 
+            <?php
+
+
+    require_once 'database.php';   
+
+
+    if(isset($_POST['submit'])) {
+    
+        if(!empty($_POST['name']) && !empty($_POST['wachtwoord'])) {
+            $name = htmlspecialchars($_POST['gebruikersnaam']);
+            $password = $_POST['wachtwoord'];
+
+        try {
+            $sql = "SELECT * FROM gebruikers WHERE gebruikersnaam = '$name'";
+            $result = $conn->query($sql);
+
+            if ($result->num_rows > 0) {
+                $row = $result->fetch_object();
+                $gebruikersnaam = $row->gebruikersnaam;
+                $hashUitDatabase = $row->wachtwoord; 
+
+                if (wachtwoord_verify($wachtwoord, $hashUitDatabase)) {
+                    echo "Inloggen gelukt! Welkom, " . htmlspecialchars($gebruikersnaam);
+
+                    session_start();
+                    $_SESSION['gebruikers'] = $gebruikersnaam;
+                } else {
+                    echo "Onjuist wachtwoord.";
+                }
+            } else {
+                echo "Gebruiker niet gevonden.";
+            }
+            
+            $result->close();
+        } catch (Exception $e) {
+            echo $e->getMessage();
+        }
+    }else {
+        echo "Vul alle velden in.";
+    }
+
+    $conn->close();
+} 
+?>
+
         <div class="extratext">
             <p>Heb je nog geen account? <br>
             Geen probleem, maak er een aan! <br>
