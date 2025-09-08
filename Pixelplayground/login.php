@@ -83,8 +83,6 @@
     }else {
         echo "Vul alle velden in.";
     }
-
-    $conn->close();
 } 
 ?>
 

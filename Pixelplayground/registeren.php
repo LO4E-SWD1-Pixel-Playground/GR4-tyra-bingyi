@@ -46,7 +46,7 @@
                 </article>
 
         <?php
-            require_once 'dbconnect.php';
+            require_once 'database.php';
 
     if (isset($_POST['submit'])) {
         if (!empty($_POST['name']) && !empty($_POST['wachtwoord'])) {
@@ -79,8 +79,6 @@
     } else {
         echo "Please fill in all fields.";
     }
-
-    $conn->close();
     
 }
 ?>
