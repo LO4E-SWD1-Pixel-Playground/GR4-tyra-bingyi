@@ -4,7 +4,6 @@ Gemaakt door Tyra Hoornik en Bingyi Zhou
 
 Bingyi {
     database.php
-    dbconnect.php
     games.php
     index.php
     ingeloged.php
