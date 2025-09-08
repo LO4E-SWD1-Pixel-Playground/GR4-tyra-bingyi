@@ -12,6 +12,7 @@
     <title>Games</title>
     <link rel="stylesheet" href="CSS/stylesheet.css">
     <script href="JS/localstorage.js" defer></script>
+    <script href="JS/darklight.js" defer></script>
 </head>
 
 <body>
@@ -21,7 +22,9 @@
     </header>
     
         <main>
-            <br><br>
+            <br>
+            <button id="buttondark" onclick="lightdarkButton()">Toggle dark mode</button>
+            <br>
                 <article class="boxes">
                     <br><br>
                 <section id="box1">
@@ -43,7 +46,7 @@
                 </article>
 
         <?php
-            require_once 'database.php';
+            require_once 'dbconnect.php';
 
     if (isset($_POST['submit'])) {
         if (!empty($_POST['name']) && !empty($_POST['wachtwoord'])) {

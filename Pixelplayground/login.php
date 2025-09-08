@@ -12,6 +12,7 @@
     <title>Games</title>
     <link rel="stylesheet" href="CSS/stylesheet.css">
     <script href="JS/localstorage.js" defer></script>
+    <script href="JS/darklight.js" defer></script>
 </head>
 
 <body>
@@ -21,7 +22,9 @@
     </header>
     
     <main>
-        <br><br>
+        <br>
+        <button id="buttondark" onclick="lightdarkButton()">Toggle dark mode</button>
+        <br>
             <article class="boxes">
                 <br><br>
             <section id="box1">

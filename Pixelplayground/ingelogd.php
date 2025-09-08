@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$dbname = "gamesite";
+$dbname = "pixelplayground";
 
 $conn = new mysqli($host, $user, $pass, $dbname);
 

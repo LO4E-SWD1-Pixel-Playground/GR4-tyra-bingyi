@@ -13,7 +13,6 @@ function lightdarkButton() {
     localStorage.setItem("darkMode", DarkMode ? "enabled" : "disabled");
 }
 
-// Load mode from localStorage on page load
 window.onload = function() {
     const savedMode = localStorage.getItem("darkMode");
     if (savedMode === "enabled") {
